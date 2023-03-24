@@ -1,0 +1,1077 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1758CDE2-2ED6-47CF-B5C3-4B38E14C6DE4}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WindowsFormsApplication3</RootNamespace>
+    <AssemblyName>WindowsFormsApplication3</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MetroFramework">
+      <HintPath>..\..\..\..\..\Controles para C·\MetroFramework\MetroFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Banco.cs" />
+    <Compile Include="csCUENTAS_BANCARIAS.cs" />
+    <Compile Include="csSotax.cs" />
+    <Compile Include="DataSetAporteVoucherTaxista.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetAporteVoucherTaxista.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetEXAMEN_XD.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetEXAMEN_XD.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetMOVIMIENTOS_BANCARIOS.cs">
+      <DependentUpon>DataSetMOVIMIENTOS_BANCARIOS.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DataSetReporteDiarioVoucher.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetReporteDiarioVoucher.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetRESUEMEN_BANCARIO_CRUZADO.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetRESUEMEN_BANCARIO_CRUZADO.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetResumenTotalAños.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetResumenTotalAños.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetResumenTotalVoucherEmpresa.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetResumenTotalVoucherEmpresa.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet_APORTES_DIARIOS_TAXISTAS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_APORTES_DIARIOS_TAXISTAS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="frmAporteVoucherTaxista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAporteVoucherTaxista.Designer.cs">
+      <DependentUpon>frmAporteVoucherTaxista.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCargo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCargo.Designer.cs">
+      <DependentUpon>frmCargo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="csAPORTESDIARIOS.cs" />
+    <Compile Include="csBAUCHES.cs" />
+    <Compile Include="csCaja.cs" />
+    <Compile Include="csCargos.cs" />
+    <Compile Include="csCONENIOS.cs" />
+    <Compile Include="csConexion.cs" />
+    <Compile Include="csControl_Aportes.cs" />
+    <Compile Include="csEmpresa.cs" />
+    <Compile Include="csHistorialTransacciones.cs" />
+    <Compile Include="csHISTORIAL_APORTES.cs" />
+    <Compile Include="csHistorial_BAUCHES.cs" />
+    <Compile Include="csLISTA_CONVENIOS.cs" />
+    <Compile Include="csTaxi.cs" />
+    <Compile Include="csTaxista.cs" />
+    <Compile Include="csTrabajador.cs" />
+    <Compile Include="csUsuarios.cs" />
+    <Compile Include="csValidarCampos.cs" />
+    <Compile Include="csVER_VOUCHES.cs" />
+    <Compile Include="csVoucher.cs" />
+    <Compile Include="DataSetAporteDiario.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetAporteDiario.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetBAUCHE.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetBAUCHE.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetIMPRIMIR_COMPROBANTE_N.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetIMPRIMIR_COMPROBANTE_N.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetMENSUAL.cs">
+      <DependentUpon>DataSetMENSUAL.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DataSetMENSUAL.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetMENSUAL.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetMOVIMIENTOS_BANCARIOS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetMOVIMIENTOS_BANCARIOS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetReporteDiario.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetReporteDiario.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetReportePorMes.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetReportePorMes.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetULTIMA_TRANSACCION.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetULTIMA_TRANSACCION.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetVISTAMES.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetVISTAMES.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet_COMPROBANTE_APORTE_DIARIO_N.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_COMPROBANTE_APORTE_DIARIO_N.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAJUSTES.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAJUSTES.Designer.cs">
+      <DependentUpon>frmAJUSTES.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCaja.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCaja.Designer.cs">
+      <DependentUpon>frmCaja.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmComprobanteBauche.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmComprobanteBauche.Designer.cs">
+      <DependentUpon>frmComprobanteBauche.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmComprobanteDiario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmComprobanteDiario.Designer.cs">
+      <DependentUpon>frmComprobanteDiario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmConvenios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConvenios.Designer.cs">
+      <DependentUpon>frmConvenios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDatos de la empresa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDatos de la empresa.Designer.cs">
+      <DependentUpon>frmDatos de la empresa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDECLARACIONCUENTA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDECLARACIONCUENTA.Designer.cs">
+      <DependentUpon>frmDECLARACIONCUENTA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDIARIOREPORT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDIARIOREPORT.Designer.cs">
+      <DependentUpon>frmDIARIOREPORT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmExamen_XD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmExamen_XD.Designer.cs">
+      <DependentUpon>frmExamen_XD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmFacturarMes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFacturarMes.Designer.cs">
+      <DependentUpon>frmFacturarMes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmHISTORIAL-AP-TAXISTAS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHISTORIAL-AP-TAXISTAS.Designer.cs">
+      <DependentUpon>frmHISTORIAL-AP-TAXISTAS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmHistorialCaja.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHistorialCaja.Designer.cs">
+      <DependentUpon>frmHistorialCaja.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmIMPIMIR_C_BUACHE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmIMPIMIR_C_BUACHE.Designer.cs">
+      <DependentUpon>frmIMPIMIR_C_BUACHE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmIMPRIMIR_COMPROBANTE_TRANSACCION.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmIMPRIMIR_COMPROBANTE_TRANSACCION.Designer.cs">
+      <DependentUpon>frmIMPRIMIR_COMPROBANTE_TRANSACCION.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmIMPRIMIR_COMPROBANTE_TRANSACCION_N.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmIMPRIMIR_COMPROBANTE_TRANSACCION_N.Designer.cs">
+      <DependentUpon>frmIMPRIMIR_COMPROBANTE_TRANSACCION_N.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmINFORMACIONUSUARIOS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmINFORMACIONUSUARIOS.Designer.cs">
+      <DependentUpon>frmINFORMACIONUSUARIOS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmIngresarAporteDiario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmIngresarAporteDiario.Designer.cs">
+      <DependentUpon>frmIngresarAporteDiario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmIngresarBauche.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmIngresarBauche.Designer.cs">
+      <DependentUpon>frmIngresarBauche.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmINGRESAR_CONVENIO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmINGRESAR_CONVENIO.Designer.cs">
+      <DependentUpon>frmINGRESAR_CONVENIO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLibretaDeAhorros.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLibretaDeAhorros.Designer.cs">
+      <DependentUpon>frmLibretaDeAhorros.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmListaDeAportesDiarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmListaDeAportesDiarios.Designer.cs">
+      <DependentUpon>frmListaDeAportesDiarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmListaDeBauches.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmListaDeBauches.Designer.cs">
+      <DependentUpon>frmListaDeBauches.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmListaDeOtrosTrabajadores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmListaDeOtrosTrabajadores.Designer.cs">
+      <DependentUpon>frmListaDeOtrosTrabajadores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmListadeTaxis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmListadeTaxis.Designer.cs">
+      <DependentUpon>frmListadeTaxis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmListaMes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmListaMes.Designer.cs">
+      <DependentUpon>frmListaMes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmListaTaxistas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmListaTaxistas.Designer.cs">
+      <DependentUpon>frmListaTaxistas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMensual2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMensual2.Designer.cs">
+      <DependentUpon>frmMensual2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmModificarTaxi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmModificarTaxi.Designer.cs">
+      <DependentUpon>frmModificarTaxi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmOpcionesCaja.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOpcionesCaja.Designer.cs">
+      <DependentUpon>frmOpcionesCaja.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPrimerIngreso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPrimerIngreso.Designer.cs">
+      <DependentUpon>frmPrimerIngreso.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRecuperarContraseña.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRecuperarContraseña.Designer.cs">
+      <DependentUpon>frmRecuperarContraseña.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRegistrarOtroTipoTrabajador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRegistrarOtroTipoTrabajador.Designer.cs">
+      <DependentUpon>frmRegistrarOtroTipoTrabajador.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRegistrarTaxi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRegistrarTaxi.Designer.cs">
+      <DependentUpon>frmRegistrarTaxi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRegistrarTaxista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRegistrarTaxista.Designer.cs">
+      <DependentUpon>frmRegistrarTaxista.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmREGISTRARUSUARIO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmREGISTRARUSUARIO.Designer.cs">
+      <DependentUpon>frmREGISTRARUSUARIO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmREGISTRARUSUARIOOPERADOR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmREGISTRARUSUARIOOPERADOR.Designer.cs">
+      <DependentUpon>frmREGISTRARUSUARIOOPERADOR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmREGISTRAR_CONVENIO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmREGISTRAR_CONVENIO.Designer.cs">
+      <DependentUpon>frmREGISTRAR_CONVENIO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmReporteVoucheDiario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReporteVoucheDiario.Designer.cs">
+      <DependentUpon>frmReporteVoucheDiario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRESUMEN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRESUMEN.Designer.cs">
+      <DependentUpon>frmRESUMEN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmResumenTotalAños.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmResumenTotalAños.Designer.cs">
+      <DependentUpon>frmResumenTotalAños.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmResumenTotalVoucherEmpresa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmResumenTotalVoucherEmpresa.Designer.cs">
+      <DependentUpon>frmResumenTotalVoucherEmpresa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRESUMEN_BANCARIO_CRUZADO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRESUMEN_BANCARIO_CRUZADO.Designer.cs">
+      <DependentUpon>frmRESUMEN_BANCARIO_CRUZADO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRetirarCaja.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRetirarCaja.Designer.cs">
+      <DependentUpon>frmRetirarCaja.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTERMINOSCONDICIONES.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTERMINOSCONDICIONES.Designer.cs">
+      <DependentUpon>frmTERMINOSCONDICIONES.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTipoDeAporte.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTipoDeAporte.Designer.cs">
+      <DependentUpon>frmTipoDeAporte.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTRANSFERENCIAS_BANCARIAS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTRANSFERENCIAS_BANCARIAS.Designer.cs">
+      <DependentUpon>frmTRANSFERENCIAS_BANCARIAS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTRANSFERENCIA_A_OTRA_CUENTA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTRANSFERENCIA_A_OTRA_CUENTA.Designer.cs">
+      <DependentUpon>frmTRANSFERENCIA_A_OTRA_CUENTA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmUsuarioAdministrador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUsuarioAdministrador.Designer.cs">
+      <DependentUpon>frmUsuarioAdministrador.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmVerReproteMENSUAL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmVerReproteMENSUAL.Designer.cs">
+      <DependentUpon>frmVerReproteMENSUAL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmVerTrabajador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmVerTrabajador.Designer.cs">
+      <DependentUpon>frmVerTrabajador.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmVerTxista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmVerTxista.Designer.cs">
+      <DependentUpon>frmVerTxista.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmVOUCHER.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmVOUCHER.Designer.cs">
+      <DependentUpon>frmVOUCHER.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IMPRIMIR_COMPRBANTE_TRANSACCION.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>IMPRIMIR_COMPRBANTE_TRANSACCION.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="IMPRIMIR_COMPROBANTE_APORTE_DIARIO_N.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IMPRIMIR_COMPROBANTE_APORTE_DIARIO_N.Designer.cs">
+      <DependentUpon>IMPRIMIR_COMPROBANTE_APORTE_DIARIO_N.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuPrincipal.Designer.cs">
+      <DependentUpon>MenuPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MessageImprimir.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MessageImprimir.Designer.cs">
+      <DependentUpon>MessageImprimir.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MessgaeAgregarTrabajador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MessgaeAgregarTrabajador.Designer.cs">
+      <DependentUpon>MessgaeAgregarTrabajador.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmAporteVoucherTaxista.resx">
+      <DependentUpon>frmAporteVoucherTaxista.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCargo.resx">
+      <DependentUpon>frmCargo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAJUSTES.resx">
+      <DependentUpon>frmAJUSTES.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCaja.resx">
+      <DependentUpon>frmCaja.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmComprobanteBauche.resx">
+      <DependentUpon>frmComprobanteBauche.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmComprobanteDiario.resx">
+      <DependentUpon>frmComprobanteDiario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConvenios.resx">
+      <DependentUpon>frmConvenios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDatos de la empresa.resx">
+      <DependentUpon>frmDatos de la empresa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDECLARACIONCUENTA.resx">
+      <DependentUpon>frmDECLARACIONCUENTA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDIARIOREPORT.resx">
+      <DependentUpon>frmDIARIOREPORT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmExamen_XD.resx">
+      <DependentUpon>frmExamen_XD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFacturarMes.resx">
+      <DependentUpon>frmFacturarMes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmHISTORIAL-AP-TAXISTAS.resx">
+      <DependentUpon>frmHISTORIAL-AP-TAXISTAS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmHistorialCaja.resx">
+      <DependentUpon>frmHistorialCaja.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmIMPIMIR_C_BUACHE.resx">
+      <DependentUpon>frmIMPIMIR_C_BUACHE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmIMPRIMIR_COMPROBANTE_TRANSACCION.resx">
+      <DependentUpon>frmIMPRIMIR_COMPROBANTE_TRANSACCION.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmIMPRIMIR_COMPROBANTE_TRANSACCION_N.resx">
+      <DependentUpon>frmIMPRIMIR_COMPROBANTE_TRANSACCION_N.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmINFORMACIONUSUARIOS.resx">
+      <DependentUpon>frmINFORMACIONUSUARIOS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmIngresarAporteDiario.resx">
+      <DependentUpon>frmIngresarAporteDiario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmIngresarBauche.resx">
+      <DependentUpon>frmIngresarBauche.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmINGRESAR_CONVENIO.resx">
+      <DependentUpon>frmINGRESAR_CONVENIO.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLibretaDeAhorros.resx">
+      <DependentUpon>frmLibretaDeAhorros.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmListaDeAportesDiarios.resx">
+      <DependentUpon>frmListaDeAportesDiarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmListaDeBauches.resx">
+      <DependentUpon>frmListaDeBauches.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmListaDeOtrosTrabajadores.resx">
+      <DependentUpon>frmListaDeOtrosTrabajadores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmListadeTaxis.resx">
+      <DependentUpon>frmListadeTaxis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmListaMes.resx">
+      <DependentUpon>frmListaMes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmListaTaxistas.resx">
+      <DependentUpon>frmListaTaxistas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMensual2.resx">
+      <DependentUpon>frmMensual2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmModificarTaxi.resx">
+      <DependentUpon>frmModificarTaxi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOpcionesCaja.resx">
+      <DependentUpon>frmOpcionesCaja.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPrimerIngreso.resx">
+      <DependentUpon>frmPrimerIngreso.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRecuperarContraseña.resx">
+      <DependentUpon>frmRecuperarContraseña.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRegistrarOtroTipoTrabajador.resx">
+      <DependentUpon>frmRegistrarOtroTipoTrabajador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRegistrarTaxi.resx">
+      <DependentUpon>frmRegistrarTaxi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRegistrarTaxista.resx">
+      <DependentUpon>frmRegistrarTaxista.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmREGISTRARUSUARIO.resx">
+      <DependentUpon>frmREGISTRARUSUARIO.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmREGISTRARUSUARIOOPERADOR.resx">
+      <DependentUpon>frmREGISTRARUSUARIOOPERADOR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmREGISTRAR_CONVENIO.resx">
+      <DependentUpon>frmREGISTRAR_CONVENIO.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReporteVoucheDiario.resx">
+      <DependentUpon>frmReporteVoucheDiario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRESUMEN.resx">
+      <DependentUpon>frmRESUMEN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmResumenTotalAños.resx">
+      <DependentUpon>frmResumenTotalAños.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmResumenTotalVoucherEmpresa.resx">
+      <DependentUpon>frmResumenTotalVoucherEmpresa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRESUMEN_BANCARIO_CRUZADO.resx">
+      <DependentUpon>frmRESUMEN_BANCARIO_CRUZADO.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRetirarCaja.resx">
+      <DependentUpon>frmRetirarCaja.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTERMINOSCONDICIONES.resx">
+      <DependentUpon>frmTERMINOSCONDICIONES.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTipoDeAporte.resx">
+      <DependentUpon>frmTipoDeAporte.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTRANSFERENCIAS_BANCARIAS.resx">
+      <DependentUpon>frmTRANSFERENCIAS_BANCARIAS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTRANSFERENCIA_A_OTRA_CUENTA.resx">
+      <DependentUpon>frmTRANSFERENCIA_A_OTRA_CUENTA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUsuarioAdministrador.resx">
+      <DependentUpon>frmUsuarioAdministrador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmVerReproteMENSUAL.resx">
+      <DependentUpon>frmVerReproteMENSUAL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmVerTrabajador.resx">
+      <DependentUpon>frmVerTrabajador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmVerTxista.resx">
+      <DependentUpon>frmVerTxista.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmVOUCHER.resx">
+      <DependentUpon>frmVOUCHER.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IMPRIMIR_COMPOBANTE_BAUCHE_N.rdlc" />
+    <EmbeddedResource Include="IMPRIMIR_COMPROBANTE_APORTE_DIARIO_N.resx">
+      <DependentUpon>IMPRIMIR_COMPROBANTE_APORTE_DIARIO_N.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuPrincipal.resx">
+      <DependentUpon>MenuPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MessageImprimir.resx">
+      <DependentUpon>MessageImprimir.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MessgaeAgregarTrabajador.resx">
+      <DependentUpon>MessgaeAgregarTrabajador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="report-ANALYTICS-APD.rdlc" />
+    <EmbeddedResource Include="reporteAPORTEDIARIO.rdlc" />
+    <EmbeddedResource Include="reporteBAUCHE.rdlc" />
+    <EmbeddedResource Include="reporteCOMPROBANTE_APORTE_DIARIO_N.rdlc" />
+    <EmbeddedResource Include="reporteIMPRIMIR_TRANSACCION_N.rdlc" />
+    <EmbeddedResource Include="ReporteMensual.rdlc" />
+    <EmbeddedResource Include="reporteMensual1.rdlc" />
+    <EmbeddedResource Include="reporteULTIMATRANSACCION.rdlc" />
+    <EmbeddedResource Include="reportEXAMEN_XD.rdlc" />
+    <EmbeddedResource Include="ReportPastelDiarioVoucher.rdlc" />
+    <EmbeddedResource Include="reportREPORTEDIARIO.rdlc" />
+    <EmbeddedResource Include="ReportResumenTotalAporteVoucher.rdlc" />
+    <EmbeddedResource Include="ReportResumenTotalAños.rdlc" />
+    <EmbeddedResource Include="ReportResumenTotalVoucherEmpresa.rdlc" />
+    <EmbeddedResource Include="reportRESUMEN_BANCARIO_CRUZADO.rdlc" />
+    <EmbeddedResource Include="ReportRESUMEN_MOVIMIENTOS_BANCARIOS.rdlc" />
+    <EmbeddedResource Include="ReportVISTAMES2.rdlc" />
+    <None Include="DataSetAporteDiario.xsc">
+      <DependentUpon>DataSetAporteDiario.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetAporteDiario.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetAporteDiario.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSetAporteDiario.xss">
+      <DependentUpon>DataSetAporteDiario.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetAporteVoucherTaxista.xsc">
+      <DependentUpon>DataSetAporteVoucherTaxista.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetAporteVoucherTaxista.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetAporteVoucherTaxista.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSetAporteVoucherTaxista.xss">
+      <DependentUpon>DataSetAporteVoucherTaxista.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetBAUCHE.xsc">
+      <DependentUpon>DataSetBAUCHE.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetBAUCHE.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetBAUCHE.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSetBAUCHE.xss">
+      <DependentUpon>DataSetBAUCHE.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetEXAMEN_XD.xsc">
+      <DependentUpon>DataSetEXAMEN_XD.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetEXAMEN_XD.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetEXAMEN_XD.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSetEXAMEN_XD.xss">
+      <DependentUpon>DataSetEXAMEN_XD.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetIMPRIMIR_COMPROBANTE_N.xsc">
+      <DependentUpon>DataSetIMPRIMIR_COMPROBANTE_N.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetIMPRIMIR_COMPROBANTE_N.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetIMPRIMIR_COMPROBANTE_N.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSetIMPRIMIR_COMPROBANTE_N.xss">
+      <DependentUpon>DataSetIMPRIMIR_COMPROBANTE_N.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetMENSUAL.xsc">
+      <DependentUpon>DataSetMENSUAL.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetMENSUAL.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetMENSUAL.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSetMENSUAL.xss">
+      <DependentUpon>DataSetMENSUAL.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetMOVIMIENTOS_BANCARIOS.xsc">
+      <DependentUpon>DataSetMOVIMIENTOS_BANCARIOS.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetMOVIMIENTOS_BANCARIOS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetMOVIMIENTOS_BANCARIOS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSetMOVIMIENTOS_BANCARIOS.xss">
+      <DependentUpon>DataSetMOVIMIENTOS_BANCARIOS.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetReporteDiario.xsc">
+      <DependentUpon>DataSetReporteDiario.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetReporteDiario.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetReporteDiario.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSetReporteDiario.xss">
+      <DependentUpon>DataSetReporteDiario.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetReporteDiarioVoucher.xsc">
+      <DependentUpon>DataSetReporteDiarioVoucher.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetReporteDiarioVoucher.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetReporteDiarioVoucher.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSetReporteDiarioVoucher.xss">
+      <DependentUpon>DataSetReporteDiarioVoucher.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetReportePorMes.xsc">
+      <DependentUpon>DataSetReportePorMes.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetReportePorMes.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetReportePorMes.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSetReportePorMes.xss">
+      <DependentUpon>DataSetReportePorMes.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetRESUEMEN_BANCARIO_CRUZADO.xsc">
+      <DependentUpon>DataSetRESUEMEN_BANCARIO_CRUZADO.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetRESUEMEN_BANCARIO_CRUZADO.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetRESUEMEN_BANCARIO_CRUZADO.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSetRESUEMEN_BANCARIO_CRUZADO.xss">
+      <DependentUpon>DataSetRESUEMEN_BANCARIO_CRUZADO.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetResumenTotalAños.xsc">
+      <DependentUpon>DataSetResumenTotalAños.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetResumenTotalAños.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetResumenTotalAños.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSetResumenTotalAños.xss">
+      <DependentUpon>DataSetResumenTotalAños.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetResumenTotalVoucherEmpresa.xsc">
+      <DependentUpon>DataSetResumenTotalVoucherEmpresa.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetResumenTotalVoucherEmpresa.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetResumenTotalVoucherEmpresa.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSetResumenTotalVoucherEmpresa.xss">
+      <DependentUpon>DataSetResumenTotalVoucherEmpresa.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetULTIMA_TRANSACCION.xsc">
+      <DependentUpon>DataSetULTIMA_TRANSACCION.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetULTIMA_TRANSACCION.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetULTIMA_TRANSACCION.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSetULTIMA_TRANSACCION.xss">
+      <DependentUpon>DataSetULTIMA_TRANSACCION.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetVISTAMES.xsc">
+      <DependentUpon>DataSetVISTAMES.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetVISTAMES.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetVISTAMES.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSetVISTAMES.xss">
+      <DependentUpon>DataSetVISTAMES.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet_APORTES_DIARIOS_TAXISTAS.xsc">
+      <DependentUpon>DataSet_APORTES_DIARIOS_TAXISTAS.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet_APORTES_DIARIOS_TAXISTAS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_APORTES_DIARIOS_TAXISTAS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSet_APORTES_DIARIOS_TAXISTAS.xss">
+      <DependentUpon>DataSet_APORTES_DIARIOS_TAXISTAS.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet_COMPROBANTE_APORTE_DIARIO_N.xsc">
+      <DependentUpon>DataSet_COMPROBANTE_APORTE_DIARIO_N.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet_COMPROBANTE_APORTE_DIARIO_N.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_COMPROBANTE_APORTE_DIARIO_N.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSet_COMPROBANTE_APORTE_DIARIO_N.xss">
+      <DependentUpon>DataSet_COMPROBANTE_APORTE_DIARIO_N.xsd</DependentUpon>
+    </None>
+    <None Include="IMPRIMIR_COMPRBANTE_TRANSACCION.xsc">
+      <DependentUpon>IMPRIMIR_COMPRBANTE_TRANSACCION.xsd</DependentUpon>
+    </None>
+    <None Include="IMPRIMIR_COMPRBANTE_TRANSACCION.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>IMPRIMIR_COMPRBANTE_TRANSACCION.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="IMPRIMIR_COMPRBANTE_TRANSACCION.xss">
+      <DependentUpon>IMPRIMIR_COMPRBANTE_TRANSACCION.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\DataSources\WindowsFormsApplication3.DataSetMENSUALTableAdapters.SP_CAJATableAdapter.datasource" />
+    <None Include="Properties\DataSources\WindowsFormsApplication3.DataSetMENSUALTableAdapters.SP_SUMA_T_APTableAdapter.datasource" />
+    <None Include="Properties\DataSources\WindowsFormsApplication3.DataSetMENSUALTableAdapters.SP_SUMA_T_AP_BTableAdapter.datasource" />
+    <None Include="Properties\DataSources\WindowsFormsApplication3.DataSetMENSUALTableAdapters.SP_TOTAL_AP_BAUCHESTableAdapter.datasource" />
+    <None Include="Properties\DataSources\WindowsFormsApplication3.DataSetMENSUALTableAdapters.SP_TOTAL_AP_DIARIOSTableAdapter.datasource" />
+    <None Include="Properties\DataSources\WindowsFormsApplication3.DataSetMENSUALTableAdapters.SP_VER_DATOS_EMPRESATableAdapter.datasource" />
+    <None Include="Properties\DataSources\WindowsFormsApplication3.DataSetMENSUALTableAdapters.TableAdapterManager.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo-Programa-Taxi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\line_icon_126358.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user_info_21970.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\numeric_password_icon_149421.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\see_eye_visible_icon_187826.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimize_icon_187899.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close_121016.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\no_see_visible_hidde_icon_187886.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo-Programa-Taxi-blanco-.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Warning_37097.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3338994-business-tools-money_106969.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BLANCO3338994-business-tools-money_106969.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\xd3338994-business-tools-money_106969 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\xdblanco3338994-business-tools-money_106969-%281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\busers_people_workers_customers_icon_124243.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\recbeipt_returns_no_receipt_checklist_invoice_icon_191184.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\b4634980-safe_122531.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\binfo_about_information_icon_132735.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bmbrisetting3_99522.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\amarilloline_icon_126358.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\QUESTION_37097.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\diseño-de-usuario-administrador.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\amarilloline_icon_1263581.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\amarilloline_icon_1263582.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bclose_121016.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Warning_370971.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sin-título-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\informacion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\info.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4230547-answer-interview-question_115026.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3643764-back-backward-left-reply-turn_113415.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Image 2021-08-13 at 11.29.01 PM.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search-symbol_icon-icons.com_71358.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search-symbol_icon-icons.com_713581.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3643764-back-backward-left-reply-turn_1134151.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BANNER-PARA-LOS-REPORTES-XD.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Banner-XD.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\analistiss.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
