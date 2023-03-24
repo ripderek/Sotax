@@ -4,4 +4,4 @@
 </p>
 Software de escritorio para la administracion de los ingresos de una cooperativa de Taxis.
 
-#Instalación de la base de datos en SQL Server 2019
+## Instalación de la base de datos en SQL Server 2019
