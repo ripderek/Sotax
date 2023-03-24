@@ -23,3 +23,11 @@ Software de escritorio para la administracion de los ingresos de una cooperativa
 - Este archivo ".bacpac" contiene toda la base de datos, esto quiere decir que contiene los datos que se han registrado, triggers, funciones, procedicimientos almacenados, entre otras cosas.
 
 ## Configurar la conexión entre C# y SQL Server
+- Dentro del proyecto existe una clase con el nombre de "csConexion.cs" hay que editar esa clase para establecer la conexión con la base de datos.
+- Lo que se debe editar es el constructor de esta clase, se tiene que escribir los datos correspondientes a su usuario y servidor de SQL Server
+
+<p align="center">
+<img alt="Logo Sotax" src="assets/Images/cap3.png" width="500px" />
+</p>
+
+- También se debe editar la conexion del proyecto.
