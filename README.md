@@ -56,3 +56,24 @@ Dentro del proyecto en la carpeta "bin" están alojados 3 documentos de texto lo
 </p>
 
 Uno de los archivos más importantes es el que lleva por nombre "Config.txt" ya que este se encarga de verificar si el programa se ha ejecutado por primera vez, de ser el caso inicia una ventana de primera configuracion del programa en el cual se debe ingresar un superusario con el cual se podrán crear más usuarios y darles roles y permisos. En las capturas del proyecto se ve más a detalle las configuraciones del proyecto.
+
+## Capturas de pantalla del software Sotax
+- Al iniciar el programa por primera vez aparecerá la siguiente pantalla de configuracion en el cuál se debe registrar un usuario administrador que servirá para crear los demás usuarios y roles.
+
+<p align="center">
+<img alt="Logo Sotax" src="assets/Images/cap7.png" width="700px" />
+</p>
+
+- Si da click en el botón de "Más info" aparecerá una ventana con la informacion sobre los usuarios, roles y opciones a las que puede acceder cada uno.
+
+<p align="center">
+<img alt="Logo Sotax" src="assets/Images/cap8.png" width="300px" />
+</p>
+
+- El inicio de sesión es algo que siempre se mostrará despues de haber terminado la primer configuración.
+
+<p align="center">
+<img alt="Logo Sotax" src="assets/Images/cap9.png" width="300px" />
+</p>
+
+
