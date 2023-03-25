@@ -76,4 +76,25 @@ Uno de los archivos más importantes es el que lleva por nombre "Config.txt" ya 
 <img alt="Logo Sotax" src="assets/Images/cap9.png" width="300px" />
 </p>
 
+- Este es el menú principal con todas las opciones que están disponibles en el software.
+
+<p align="center">
+<img alt="Logo Sotax" src="assets/Images/cap10.png" width="500px" />
+</p>
+
+- Una de las ventanas de registro de ingresos a la cooperativa de taxis: 
+
+<p align="center">
+<img alt="Logo Sotax" src="assets/Images/cap11.png" width="500px" />
+</p>
+
+-También genera gráficos estadísticos para la toma de deciciones: 
+
+<p align="center">
+<img alt="Logo Sotax" src="assets/Images/cap12.png" width="500px" />
+</p>
+
+## Anotaciones 
+- Por el momento esto solo es un pequeño resumen de lo que hace el software, pronto actualizaré el repositorio y añadiré la documentación completa en un pdf con los requerimientos y los diagramas de casos de uso, clase, actividades, etc. 
+- Tener en cuenta que este fué el primer proyecto que realizé en mi carrera como desarrollador por lo que la base de datos y algunas cosas están muy primitivas y tienen algunos fallos.
 
