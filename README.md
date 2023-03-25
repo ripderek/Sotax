@@ -48,3 +48,11 @@ Software de escritorio para la administracion de los ingresos de una cooperativa
 
 - Una vez realizado los cambios se puede ejecutar el proyecto y hacer uso de la base de datos.
 
+## Manejo de archivos del proyecto 
+Dentro del proyecto en la carpeta "bin" están alojados 3 documentos de texto los cuales pueden ser cambiados a ".dll" e incriptarlos pero de momento están de esta manera para manipularlos y hacer pruebas. 
+
+<p align="center">
+<img alt="Logo Sotax" src="assets/Images/cap6.png" width="500px" />
+</p>
+
+Uno de los archivos más importantes es el que lleva por nombre "Config.txt" ya que este se encarga de verificar si el programa se ha ejecutado por primera vez, de ser el caso inicia una ventana de primera configuracion del programa en el cual se debe ingresar un superusario con el cual se podrán crear más usuarios y darles roles y permisos. En las capturas del proyecto se ve más a detalle las configuraciones del proyecto.
